@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+{% block Title %}
+{{Judul}}
+{% endblock Title %}
+{% block css %}
+<!-- <link rel="stylesheet" type="text/css" href="{% static 'home/css/index.css' %}">			 -->
+{% endblock css %}
+{% block content %}
+	<div class="container">
+	<table class="table">
+	  <thead>
+	    <tr>
+	      <th scope="col">#</th>
+	      <th scope="col">Nama</th>
+	      <th scope="col">Isi</th>
+	      <th scope="col">Waktu Post</th>
+	      <th scope="col">Waktu Update</th>
+          <th scope="col">Delete</th>
+          <th scope="col">Update</th>
+	    </tr>
+	  </thead>
+	  <tbody>   
+	    {% for saran in object_list %}
+	    	<tr>
+		      <th scope="row">{{forloop.counter}}</th>
+		      <td>{{saran.Nama}}</td>
+		      <td>{{saran.isi}}</td>
+		      <td>{{saran.publish}}</td>
+              <td>{{saran.publish}}</td>
+              <td>{{saran.update}}</td>
+		      <td><a class="btn btn-danger" href="{% url 'Form:delete' saran.pk%}" title="">Delete</a>
+		      <td><a class="btn btn-warning" href="{% url 'Form:update' saran.pk%}" title="">Update</a>
+		    </tr>
+	    {% endfor %}
+	  </tbody>
+	</table>
+	<a class="btn btn-primary" href="{% url 'Form:create' %}">Tambah</a>
+</div>
+{% endblock content %}

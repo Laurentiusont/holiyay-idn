@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>{{page_title}}</title>
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,400;1,300&display=swap" rel="stylesheet">
+	{% include "snippets/styles.html" %}
+    <link rel="stylesheet" href="{% static 'account/css/login.css' %}">
+</head>
+<body>
+	<div class="container col-lg-3 col-sm-5 ms-auto me-auto mt-5" id="z">
+		<div class="pt-5 pb-4">
+			<h2 class="text-center">Login</h2>
+		</div>
+		<form method="POST">
+			{% csrf_token %}
+		<div class="mt-4 mb-5x">
+			<table class="mx-auto">
+				<tr> 
+					<td>
+						<label>Username</label><br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="text" class="ipt" name="username" id="username"><br>
+					</td> 
+				</tr>
+				<tr>
+					<td>
+						<label>Password</label><br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="password" class="ipt" name="password" id="password"><br>
+					</td>
+					
+				</tr>
+			  </table>
+			
+		</div>
+		<p class="text-center">
+			<input type="submit" value="Login" id="dd">
+			<br><br>
+			<a href="{% url 'account:register' %}">Don't have an account ?</a>
+		</p>
+	</form>
+	</div>
+	{% include "snippets/scripts.html" %}
+</body>
+</html>
+
+	<!-- <h1>{{page_title}}</h1>
+
+	<form method="POST">
+		{% csrf_token %}
+		<label for="username">Username: </label>
+		<input type="text" name="username" id="username">
+		<br>
+		<label for="password">Password: </label>
+		<input type="password" name="password" id="password">
+		<br>
+		<button type="submit">Login</button>
+	</form>
+	<li><a href="{% url 'account:register' %}">Sign Up</a></li> -->

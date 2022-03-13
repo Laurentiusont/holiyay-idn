@@ -1,0 +1,30 @@
+@font-face {
+    font-family: Mont;
+    src: url(Mont.otf);
+}
+
+body {
+    opacity: 0, 5;
+    background-image: url(rinjani3.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Mont;
+}
+
+p:hover {
+    color: red;
+}
+
+#gg {
+    width: 100%;
+}
+
+#aa {
+    transition: 2s;
+}
+
+#aa:hover {
+    width: 400px;
+    font-size: x-large;
+}

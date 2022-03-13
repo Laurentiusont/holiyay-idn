@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+{% block Title %}
+{{Judul}}
+{% endblock Title %}
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'home/css/index.css' %}">			
+{% endblock css %}
+{% block content %}
+
+<div class="container">
+    <p class="para">Website No.1<br>
+      Temukan Liburanmu<br></p>
+    <p class="fs-3 text-white">Dari Sabang sampai Merauke<br>
+      Temukan semuanya di sini</p>
+    <a href="{% url 'rekomendasi:rekomendasi' %}" class="btn mt-4" role="button" aria-disabled="true" id="but">Temukan <br>di sini</a>
+  </div>
+{% endblock content %}

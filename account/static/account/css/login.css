@@ -1,0 +1,38 @@
+body {
+    background-image: url(background.jpg);
+    font-family: 'Mulish', sans-serif;
+    line-height: 1.5;
+}
+input.ipt{
+    background: none;
+    border: none;
+    border-bottom: 1px solid grey;
+    margin-bottom: 20px;
+    width : 220px;
+    outline-width: 0cm;
+    opacity: 70%;
+}
+#z {
+    background-color: rgba(200, 214, 229,0.8);
+    height: 500px;
+    border-radius: 20px;
+}
+#dd {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 190px;
+    border-radius: 70px;
+    border-style: none;
+    background-color:  #2ed573;
+    color: white;
+    transition: 0.3s;
+}
+#dd:hover{
+    border: 1px solid #2ed573;
+    background-color: unset;
+    color :#2ed573;
+}
+label {
+    opacity: 70%;
+   
+}

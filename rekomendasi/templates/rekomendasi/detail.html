@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% load static %}
+{% block Title %}
+{{Judul}}
+{% endblock Title %}
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'rekomendasi/css/detail.css' %}">			
+{% endblock css %}
+{% block content %}
+<div class="container">
+    <h1 class="text-center m-4">Rekomendasi Wisata Di Indonesia </h1>
+  <div class="row row-cols-1 justify-content-md-center">
+    <div class="col-md-3 me-3" id="aa">
+      <img id="gg" src="{% static 'rekomendasi/img/onsen.png' %}">
+      <p class="text-center">The Onsen Batu</p>
+    </div>
+    <div class="col-md-3 me-3" id="aa">
+      <img id="gg" src="{% static 'rekomendasi/img/borobudur.jpg' %}">
+      <p class="text-center">Borobudur</p> 
+    </div>
+    <div class="col-md-3 me-3" id="aa">
+      <img id="gg" src="{% static 'rekomendasi/img/bromo.jpg' %}">
+      <p class="text-center">Bromo </p>
+    </div>
+  </div>
+    <div class="row row-cols-1 justify-content-md-center">
+      <div class="col-md-3 me-3" id="aa">
+        <img id="gg" src="{% static 'rekomendasi/img/tawang_1.jpg' %}">
+        <p class="text-center">Tawangmanggu  </p>
+      </div>
+      <div class="col-md-3 me-3" id="aa">
+        <img id="gg" src="{% static 'rekomendasi/img/wakatobi2.jpg' %}">
+        <p class="text-center"> Wakatobi </p>
+      </div>
+      <div class="col-md-3 me-3" id="aa">
+        <img id="gg" src="{% static 'rekomendasi/img/derawan.jpg' %}">
+        <p class="text-center"> Pulau Derawan </p>
+      </div>
+    </div>
+      <div class="row row-cols-1 justify-content-md-center">
+        <div class="col-md-3 me-3" id="aa">
+          <img id="gg" src="{% static 'rekomendasi/img/pinkbeach.jpg' %}">
+          <p class="text-center">Pink Beach </p>
+        </div>
+        <div class="col-md-3 me-3" id="aa">
+          <img id="gg" src="{% static 'rekomendasi/img/xurang.png' %}">
+          <p class="text-center">Kaliurang </p>
+        </div>
+        <div class="col-md-3 me-3" id="aa">
+          <img id="gg" src="{% static 'rekomendasi/img/sarangan2.png' %}">
+          <p class="text-center"> Telaga Sarangan </p>
+        </div>
+      </div>
+        <div class="row row-cols-1 justify-content-md-center">
+          <div class="col-md-3 me-3" id="aa">
+            <img id="gg" src="{% static 'rekomendasi/img/pulaukomodo1.jpg' %}">
+            <p class="text-center">  Pulau Komodo </p>
+          </div>
+          <div class="col-md-3 me-3" id="aa">
+            <img id="gg" src="{% static 'rekomendasi/img/morotai.jpg' %}">
+            <p class="text-center">  Morotai </p>
+          </div>
+          <div class="col-md-3 me-3" id="aa">
+            <img id="gg" src="{% static 'rekomendasi/img/palu.jpg' %}">
+            <p class="text-center">  Pusat Laut Donggala </p>
+          </div>
+        </div>
+</div>
+{% endblock content %}

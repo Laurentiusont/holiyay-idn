@@ -1,0 +1,55 @@
+@font-face {
+    font-family: Mont;
+    src: url(Mont.otf);
+}
+
+body {
+    opacity: 0, 5;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Mont;
+
+}
+
+.meta {
+    color: blue;
+}
+
+.satu {
+    background-color: #0E3552;
+    color: white;
+}
+
+#b {
+    transition: 2s;
+}
+
+#b:hover {
+    width: 400px;
+}
+
+.dua {
+    background-color: #0E3552;
+    color: white;
+    transition: 2s;
+}
+
+#c {
+    transition: 2s;
+}
+
+#c:hover {
+    width: 500px;
+}
+
+
+#d {
+    transition: 2s;
+}
+
+#d:hover {
+    width: 400px;
+}

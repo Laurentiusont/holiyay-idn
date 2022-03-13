@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+{% block Title %}
+{{Judul}}
+{% endblock Title %}
+{% block css %}
+<!-- <link rel="stylesheet" type="text/css" href="{% static 'home/css/index.css' %}">			 -->
+{% endblock css %}
+{% block content %}
+<div class="container">
+<h5>Silahkan Masukkan Informasi Tempat Wisata yang Anda Rekomendasikan :</h1>
+<form method='POST'>
+    {% csrf_token %}
+    <table>
+        {{form.as_table}}
+    </table>
+    <button type="Submit">Kirim</button>
+</form>
+</div>
+{% endblock content %}

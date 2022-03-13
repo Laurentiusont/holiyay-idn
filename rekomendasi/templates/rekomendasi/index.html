@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+{% block Title %}
+{{Judul}}
+{% endblock Title %}
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'rekomendasi/css/index.css' %}">			
+{% endblock css %}
+{% block content %}
+  <div class="container-fluid">
+  <h1 class="mt-5 mb-5 text-center meta">Top 3 Rekomendasi Daerah Wisata</h1>
+  <div class="row row-cols-1 g-4 justify-content-md-center">
+    <div class="col-md-3 me-3" id="b">
+      <div class="card p-2 satu" >
+        <img src="{% static 'rekomendasi/img/tamansari.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Yogyakarta</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4  me-3" id="c">
+      <div class="card p-2 dua" >
+        <img src="{% static 'rekomendasi/img/bali.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Bali</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3  me-3" id="d">
+      <div class="card p-2 satu" >
+        <img src="{% static 'rekomendasi/img/ijen.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">Jawa Timur</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
