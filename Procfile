@@ -1,1 +1,0 @@
-web: gunicorn holiyay.wsgi --log-file -
